@@ -7,141 +7,132 @@
     <meta name="description"
         content="Découvrez des destinations de voyage incroyables avec notre galerie d'images et notre carte interactive.">
     <title>Voyage - Site de Clément</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Bouton pour ouvrir le menu -->
     <button class="menu-toggle">☰</button>
 
+    <!-- Menu latéral  -->
     <div class="side-menu">
         <ul>
-            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="galeries.html">Galerie</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="connexion.html">Connexion</a></li>
         </ul>
     </div>
+
+    <!-- En-tête -->
     <header>
-        <h1>Présentation de mes différents voyages🌴</h1>
+        <h1>Site de Clément</h1>
+        <p>Présentation de mes différents voyages</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="acceuil.html">Accueil</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="galeries.html">Galerie</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="connexion.html">Connexion</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <div class="palm-icon">
-            <svg fill="#0f4c81" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg" stroke="#0f4c81"
-                stroke-width="0.00032">
-                <path
-                    d="M11.177 1.287c-1.75 0.007-3.372 0.363-4.163 0.61 0 0 7.174 1.217 7.771 6.17-5.451-7.86-11.397 1.646-11.397 1.646 1.24-0.325 4.79-1.291 7.16-0.883 1.622 0.279 3.203 1.749 3.135 1.73-3.865 0.951-10.006 18.153-8.963 19.55 0.93 1.068 1.861 0.704 2.79 0.162 0.46-3.646 4.052-19.641 8.447-18.35 0.001 0 0.001-0 0.002 0 0.37 0.127 0.72 0.349 0.739 0.688 0.036 0.647-0.381 1.703-0.283 2.437 0.229 1.703 0.562 2.296 1.047 2.89 1.158-0.651 2.267-2.999 2.496-4.216 1.038 0.455 2.706 1.507 4.068 5.417 0.712-3.664-0.315-6.554-3.683-7.837 1.459-0.631 7.809 2.56 8.584 4.339 0.754-3.207-4.58-7.131-9.020-6.922 0.851-0.222 1.787 0.037 2.677-0.618 1.195-0.88 2.588-1.637 3.886-2.451-4.366-1.899-8.395-0.961-8.679 1.004-0.223-4.363-3.608-5.379-6.612-5.366v0z">
-                </path>
-            </svg>
+    <!-- Contenu principal -->
+    <div class="main-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
 
-        </div>
-        <section class="featured-destination">
-            <div class="featured-header">
-                <div class="palm-and-title">
+        <main>
+            <section>
+                <div class="card">
+                    <h2>Galerie de voyages</h2>
+                    <div class="gallery">
+                        <figure>
+                            <figcaption>Kotor, Monténégro</figcaption>
+                            <a href="destinations/montenegro.html">
+                                <img src="medias/montenegro.jpg" alt="Kotor, Monténégro">
+                            </a>
+                        </figure>
 
-                    <div class="featured-title">
-                        <h3>Futur Voyage</h3>
-                        <h2>ANDALOUSIE, ESPAGNE</h2>
-                        <a href="destinations.html" class="hero-cta-btn">Destinations</a>
+                        <figure>
+                            <figcaption>Lanzarote, Espagne</figcaption>
+                            <a href="destinations/lanzarote.html">
+                                <img src="medias/lanzarote.jpg" alt="Lanzarote, Espagne">
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <figcaption>Ibiza, Espagne</figcaption>
+                            <a href="destinations/ibiza.html">
+                                <img src="medias/ibiza.jpg" alt="Ibiza, Espagne">
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <figcaption>Sicile, Italie</figcaption>
+                            <a href="destinations/sicile.html">
+                                <img src="medias/Sicille.jpg" alt="Sicile, Italie">
+                            </a>
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Cavtat, Croatie</figcaption>
+                            <a href="destinations/croatie.html">
+                                <img src="medias/croatie_2.jpg" alt="Cavtat, Croatie">
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <figcaption>Martinique</figcaption>
+                            <a href="destinations/martinique.html">
+                                <img src="medias/voyager-en-Martinique-1024x683.jpg" alt="Martinique">
+                            </a>
+                        </figure>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="featured-image">
-                <img src="medias/anda.jpg.jpg" alt="Andalousie, Espagne">
-            </div>
-        </section>
+            <section>
+                <h2>Carte interactive : Cavtat, Croatie</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28061.343134574476!2d18.191499803142804!3d42.582472154074246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c0d992a48d575%3A0x2600ad515335f022!2sCavtat%2C%20Croatie!5e1!3m2!1sfr!2sus!4v1745244575686!5m2!1sfr!2sus"
+                    width="100%" height="400" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
 
-        <section>
-            <div class="card">
-                <h2>Galerie de voyages</h2>
-                <div class="gallery">
-                    <figure>
-                        <figcaption>Kotor, Monténégro</figcaption>
-                        <a href="destinations/montenegro.html">
-                            <img src="medias/montenegro.jpg" alt="Kotor, Monténégro">
-                        </a>
-                    </figure>
-                    <figure>
-                        <figcaption>Cavtat, Croatie</figcaption>
-                        <a href="destinations/croatie.html">
-                            <img src="medias/croatie_2.jpg" alt="Cavtat, Croatie">
-                        </a>
-                    </figure>
-                    <figure>
-                        <figcaption>Sicile, Italie</figcaption>
-                        <a href="destinations/sicile.html">
-                            <img src="medias/Sicille.jpg" alt="Sicile, Italie">
-                        </a>
-                    </figure>
-                    <figure>
-                        <figcaption>Lanzarote, Espagne</figcaption>
-                        <a href="destinations/lanzarote.html">
-                            <img src="medias/lanzarote.jpg" alt="Lanzarote, Espagne">
-                        </a>
-                    </figure>
-                    <figure>
-                        <figcaption>Ibiza, Espagne</figcaption>
-                        <a href="destinations/ibiza.html">
-                            <img src="medias/ibiza.jpg" alt="Ibiza, Espagne">
-                        </a>
-                    </figure>
-
-
-                    <figure>
-                        <figcaption>Martinique</figcaption>
-                        <a href="destinations/martinique.html">
-                            <img src="medias/voyager-en-Martinique-1024x683.jpg" alt="Martinique">
-                        </a>
-                    </figure>
+            <section class="sliding-bar">
+                <h2>Exemple de photo</h2>
+                <div class="slider">
+                    <img src="medias/montenegro.jpg" alt="Monténégro">
+                    <img src="medias/lanzarote.jpg" alt="Lanzarote">
+                    <img src="medias/ibiza.jpg" alt="Ibiza">
+                    <img src="medias/Sicille.jpg" alt="Sicile">
+                    <img src="medias/croatie_1.jpg" alt="Croatie">
+                    <img src="medias/voyager-en-Martinique-1024x683.jpg" alt="Martinique">
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Carte interactive : Cavtat, Croatie</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28061.343134574476!2d18.191499803142804!3d42.582472154074246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c0d992a48d575%3A0x2600ad515335f022!2sCavtat%2C%20Croatie!5e1!3m2!1sfr!2sus!4v1745244575686!5m2!1sfr!2sus"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-        <section class="sliding-bar">
-            <h2>Photos de voyages</h2>
-            <div class="slider">
-                <img src="medias/montenegro.jpg" alt="Monténégro">
-                <img src="medias/lanzarote.jpg" alt="Lanzarote">
-                <img src="medias/ibiza.jpg" alt="Ibiza">
-                <img src="medias/Sicille.jpg" alt="Sicile">
-                <img src="medias/croatie_1.jpg" alt="Croatie">
-                <img src="medias/voyager-en-Martinique-1024x683.jpg" alt="Martinique">
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2025 Site de Clément - Tous droits réservés</p>
     </footer>
 
     <script>
+        // Sélectionner les éléments
         const menuToggle = document.querySelector('.menu-toggle');
         const sideMenu = document.querySelector('.side-menu');
         const mainContent = document.querySelector('.main-content');
 
+        // Ajouter un événement de clic sur le bouton ☰
         menuToggle.addEventListener('click', () => {
+            // Basculer la classe 'open' sur le menu latéral et le contenu
             sideMenu.classList.toggle('open');
             mainContent.classList.toggle('open');
         });
     </script>
 </body>
-
 </html>
