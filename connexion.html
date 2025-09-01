@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations</title>
     <link rel="stylesheet" href="style.css">
+    <title>Connexion</title>
 </head>
 <body>
-    <!-- Entête -->
-    <header>
-        <h1>Nos Destinations de Voyage</h1>
-    </header>
-    
     <!-- Bouton pour ouvrir le menu -->
     <button class="menu-toggle">☰</button>
 
-    <!-- Menu latéral  -->
+    <!-- Menu latéral -->
     <div class="side-menu">
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -26,92 +21,46 @@
         </ul>
     </div>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="connexion.html">Connexion</a></li>
-        </ul>
-    </nav>
+    <div class="main-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
 
-    <!-- Section principale -->
-    <main>
-        <section>
-            <div class="card">
-                <h2>Destinations</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </section>
-
-        <!-- Liste des destinations -->
-        <section>
-            <div class="card">
-                <h3>Kotor, Montenegro</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse potenti.</p>
-                <a href="destinations/montenegro.html">
-                    <button>En savoir plus</button>
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Lanzarote, Espagne</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu tellus aliquet, non laoreet odio vulputate.</p>
-                <a href="destinations/lanzarote.html">
-                    <button>En savoir plus</button>
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Ibiza, Espagne</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit leo eu risus luctus, eu malesuada risus malesuada.</p>
-                <a href="destinations/ibiza.html">
-                    <button>En savoir plus</button>
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Sicile, Italie</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus ligula a velit tincidunt, ac iaculis nisl facilisis.</p>
-                <a href="destinations/sicile.html">
-                    <button>En savoir plus</button>
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Cavtat, Croatie</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus ligula a velit tincidunt, ac iaculis nisl facilisis.</p>
-                <a href="destinations/croatie.html">
-                    <button>En savoir plus</button>
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Martinique</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus ligula a velit tincidunt, ac iaculis nisl facilisis.</p>
-                <a href="destinations/martinique.html">
-                    <button>En savoir plus</button>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; Site de Clément TQT</p>
-    </footer>
+        <main>
+            <section>
+                <center><h2>Connexion</h2></center>
+                <form action="#" method="#">
+                    <ul>
+                        <li>
+                            <label for="username">Nom d'utilisateur :</label>
+                            <input type="text" id="username" name="username" required>
+                        </li>
+                        <li>
+                            <label for="password">Mot de passe :</label>
+                            <input type="password" id="password" name="password" required>
+                        </li>
+                        <li>
+                            <button type="submit">Se connecter</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </main>
+    </div>
 
     <script>
-        // Sélectionner les éléments
+        // Toggle du menu latéral
         const menuToggle = document.querySelector('.menu-toggle');
         const sideMenu = document.querySelector('.side-menu');
         const mainContent = document.querySelector('.main-content');
 
-        // Ajouter un événement de clic sur le bouton ☰
         menuToggle.addEventListener('click', () => {
-            // Basculer la classe 'open' sur le menu latéral et le contenu
             sideMenu.classList.toggle('open');
             mainContent.classList.toggle('open');
         });
