@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicile</title>
+    <link rel="stylesheet" href="../assets/css/style.css"> <!-- Lien vers le même fichier CSS -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Entête -->
+    <header>
+        <h1>Sicile</h1>
+    </header>
+    <!-- Bouton pour ouvrir le menu -->
+    <button class="menu-toggle">☰</button>
+
+    <!-- Menu latéral  -->
+    <div class="side-menu">
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="galeries.html">Galerie</a></li>
+            <li><a href="contact.html">Contact </a> </li>
+            <li><a href="connexion.html">Connexion </a> </li>
+        </ul>
+    </div>
+
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../acceuil.html">Accueil</a></li>
+            <li><a href="../destinations.html">Destinations</a></li>
+            <li><a href="../galerie.html">Galerie</a></li>
+            <li><a href="../contact.html">Contact </a> </li>
+            <li><a href="../connexion.html">Connexion </a> </li>
+        </ul>
+    </nav>
+
+    <!-- Section principale -->
+    <div class="card">
+        <main>
+            <section>
+                <h2>Découvrez la Sicile</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae nemo deserunt quaerat
+                    inventore
+                    beatae odit itaque aperiam porro voluptas !</p>
+            </section>
+
+            <div class="gallery">
+                <img src="../medias/Sicille.jpg" alt="Sicile, Espagne"> <!-- Vérifie le nom du fichier -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; Site de Clément TQT</p>
+    </footer>
+</body>
+<script>
+    // Toggle du menu latéral
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sideMenu = document.querySelector('.side-menu');
+    const mainContent = document.querySelector('.main-content');
+
+    menuToggle.addEventListener('click', () => {
+        sideMenu.classList.toggle('open');
+        mainContent.classList.toggle('open');
+    });
+</script>
+
+</html>

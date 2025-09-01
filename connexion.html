@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Connexion</title>
+</head>
+<body>
+     <!-- Bouton pour ouvrir le menu -->
+     <button class="menu-toggle">☰</button>
+
+     <!-- Menu latéral -->
+     <div class="side-menu">
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="galeries.html">Galerie</a></li>
+            <li><a href="contact.html">Contact </a> </li>
+            <li><a href="connexion.html">Connexion </a> </li>
+        </ul>
+     </div>
+
+     <div class="main-content">
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="galeries.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>.
+                <li><a href="connexion.html">Connexion </a> </li>
+            </ul>
+        </nav>
+
+     
+     <!-- Contenu principal -->
+     <div class="main-content">
+        <main>
+            <section>
+                <center><h2>Connexion</h2></center>
+                <form action="#" method="#">
+                    <ul>
+                        <li>
+                            <label for="username">Nom d'utilisateur :</label>
+                            <input type="text" id="username" name="username" required>
+                        </li>
+                        <li>
+                            <label for="password">Mot de passe :</label>
+                            <input type="password" id="password" name="password" required>
+                        </li>
+                        <li>
+                            <button type="submit">Se connecter</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+<script>
+    // Toggle du menu latéral
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sideMenu = document.querySelector('.side-menu');
+    const mainContent = document.querySelector('.main-content');
+
+    menuToggle.addEventListener('click', () => {
+        sideMenu.classList.toggle('open');
+        mainContent.classList.toggle('open');
+    });
+</script>
+</html>
