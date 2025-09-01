@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Site de Clément</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bouton pour ouvrir le menu -->
+    <button class="menu-toggle">☰</button>
+
+    <!-- Menu latéral  -->
+    <div class="side-menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+    </div>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Galerie Photos</h1>
+        <p>Découvrez mes voyages en images</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="main-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <div class="card">
+                    <h2>Galerie complète</h2>
+                    <div class="gallery">
+                        <figure>
+                            <img src="medias/montenegro.jpg" alt="Kotor, Monténégro">
+                            <figcaption>Kotor, Monténégro</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="medias/lanzarote.jpg" alt="Lanzarote, Espagne">
+                            <figcaption>Lanzarote, Espagne</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="medias/ibiza.jpg" alt="Ibiza, Espagne">
+                            <figcaption>Ibiza, Espagne</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="medias/Sicille.jpg" alt="Sicile, Italie">
+                            <figcaption>Sicile, Italie</figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="medias/croatie_2.jpg" alt="Cavtat, Croatie">
+                            <figcaption>Cavtat, Croatie</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="medias/voyager-en-Martinique-1024x683.jpg" alt="Martinique">
+                            <figcaption>Martinique</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Site de Clément - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Sélectionner les éléments
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sideMenu = document.querySelector('.side-menu');
+        const mainContent = document.querySelector('.main-content');
+
+        // Ajouter un événement de clic sur le bouton ☰
+        menuToggle.addEventListener('click', () => {
+            // Basculer la classe 'open' sur le menu latéral et le contenu
+            sideMenu.classList.toggle('open');
+            mainContent.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
