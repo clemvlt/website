@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Croatie</title>
-    <link rel="stylesheet" href="../../style.css"> <!-- Corrigé selon l'arborescence -->
-    <style>
-    
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
         <h1>Croatie</h1>
     </header>
-     <!-- Bouton pour ouvrir le menu -->
-     <button class="menu-toggle">☰</button>
+    
+    <!-- Bouton pour ouvrir le menu -->
+    <button class="menu-toggle">☰</button>
 
-     <!-- Menu latéral  -->
-     <div class="side-menu">
-         <ul>
-             <li><a href="acceuil.html">Accueil</a></li>
-             <li><a href="destinations.html">Destinations</a></li>
-             <li><a href="galeries.html">Galerie</a></li>
-             <li><a href="contact.html">Contact </a> </li>
-             <li><a href="connexion.html">Connexion </a> </li>
-         </ul>
-     </div>
- 
+    <!-- Menu latéral  -->
+    <div class="side-menu">
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../destinations.html">Destinations</a></li>
+            <li><a href="../galerie.html">Galerie</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../connexion.html">Connexion</a></li>
+        </ul>
+    </div>
 
     <nav>
         <ul>
-            <li><a href="../../../acceuil.html">Accueil</a></li>
-            <li><a href="../../destinations.html">Destinations</a></li>
-            <li><a href="../../galerie.html">Galerie</a></li>
-            <li><a href="../.././contact.html">Contact </a> </li>
-            <li><a href="../../connexion.html">Connexion </a> </li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../destinations.html">Destinations</a></li>
+            <li><a href="../galerie.html">Galerie</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../connexion.html">Connexion</a></li>
         </ul>
     </nav>
 
@@ -45,12 +42,24 @@
         </section>
 
         <div class="image-container">
-            <img src="croatie_2.jpg" alt="Dubrovnik, Croatie">
+            <img src="../medias/croatie_2.jpg" alt="Dubrovnik, Croatie">
         </div>
     </main>
 
     <footer>
         <p>&copy; Site de Clément</p>
     </footer>
+    
+    <script>
+        // Toggle du menu latéral
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sideMenu = document.querySelector('.side-menu');
+        const mainContent = document.querySelector('.main-content');
+
+        menuToggle.addEventListener('click', () => {
+            sideMenu.classList.toggle('open');
+            mainContent.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
